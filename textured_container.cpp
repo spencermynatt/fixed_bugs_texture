@@ -86,12 +86,14 @@ int main() {
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0); 
 	
 
-	
+	//each vertex has 5 values
+	//since it starts at the starting point 0, (arrays always start at 0) we don't need to put to where it actually begins
 
 	glEnableVertexAttribArray(1);
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 
-
+         //a vertex has 5 values
+	// and it starts at the float of array[3]
 
 
 
