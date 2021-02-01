@@ -76,7 +76,10 @@ int main() {
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(merging), merging, GL_STATIC_DRAW);
 	
-
+                 //Every time you need to bind all the information of the vertex before drawing the model, when the amount of data is large,
+	         //it is very troublesome to repeat such an action.
+                 //VAO can store all of these configurations in an object. 
+		//Each time you draw a model, you only need to bind the VAO object.
 	unsigned int VAO;
 	glGenVertexArrays(1, &VAO);
 	glBindVertexArray(VAO);
