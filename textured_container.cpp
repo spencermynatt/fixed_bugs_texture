@@ -90,8 +90,8 @@ int main() {
 	
 
 	//each vertex has 5 values
-	//since it starts at the starting point 0, (arrays always start at 0) we don't need to put to where it actually begins
-
+	//since it starts at the starting point 0, (arrays always start at 0) we don't need to put to where it actually begins 
+	//there are 5 floats per vertex attribute
 	glEnableVertexAttribArray(1);
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 
